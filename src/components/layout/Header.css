@@ -6,17 +6,19 @@
 }
 
 @media (min-width: 769px) {
-  .header {
+  .active {
     background-color: var(--header-background-color);
     height: 3.5em;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    position: fixed;
+    max-width: 100%;
     padding: 0 20%;
+    transition: ease-in 0.5s;
   }
 
   .nav_container {
