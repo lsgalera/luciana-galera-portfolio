@@ -1,0 +1,23 @@
+:root {
+  --border-radius: 12px;
+  --background-color: #202122;
+  --header-background-color: #000;
+  --primary-font-color: #fff;
+  --secondary-font-color: #ff84a9;
+  --layout-padding: 25em;
+  --layout-padding-mobile: 5em;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+}

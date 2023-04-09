@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.left_column,
+.right_column {
+  padding: 0 10%;
+}
+
+.left_column_title,
+.left_column_p {
+  color: var(--primary-font-color);
+}
+
+.left_column_title {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.title_bracket {
+  color: var(--secondary-font-color);
+}
+
+.left_column_subtitle {
+  color: var(--secondary-font-color);
+  margin-bottom: 1em;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.left_column_p {
+  font-size: 1rem;
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: row nowrap;
+  margin: 5% 0;
+}
+
+.primary_button,
+.secondary_button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.9rem;
+  border-radius: var(--border-radius);
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 2em;
+}
+
+.primary_button {
+  background-color: var(--secondary-font-color);
+  color: var(--background-color);
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.primary_button:hover {
+  background-color: var(--primary-font-color);
+}
+
+.profile_img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 15% 0;
+}
+
+.icon_list {
+  display: none;
+}
+
+.svg_link {
+  width: 54px;
+  height: 54px;
+}
+
+.svg_link_download {
+  width: 50px;
+  height: 50px;
+}
+
+.secondary_button {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.secondary_button:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: var(--secondary-font-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.secondary_button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.svg_link_decor:hover {
+  filter: brightness(200%);
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+  }
+
+  .icon_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+  }
+
+  .left_column,
+  .right_column {
+    flex: 1;
+  }
+
+  .left_column {
+    padding: 0 10% 0 0;
+  }
+
+  .right_column {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .profile_img {
+    width: 350px;
+    height: 420px;
+    margin: 5% 0;
+    border-radius: var(--border-radius);
+  }
+
+  .left_column_title {
+    font-size: 2rem;
+  }
+
+  .left_column_subtitle {
+    font-size: 1.75rem;
+  }
+
+  .left_column_p,
+  .primary_button,
+  .secondary_button {
+    font-size: 1.1rem;
+  }
+}

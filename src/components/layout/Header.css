@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+.header {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .header {
+    background-color: var(--header-background-color);
+    height: 3.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: fixed;
+    padding: 0 20%;
+  }
+
+  .nav_container {
+    color: var(--primary-font-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo_container {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .logo_bracket {
+    color: var(--secondary-font-color);
+  }
+
+  .nav_list {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav_list li {
+    margin-left: 3.125em;
+    color: var(--primary-font-color);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav_list li:hover {
+    cursor: pointer;
+  }
+
+  .nav_list li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: var(--secondary-font-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav_list li:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
