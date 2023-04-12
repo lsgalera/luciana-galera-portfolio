@@ -1,24 +1,27 @@
 import "./HomePage.css";
 
-const src = "/profile_picture.jpeg";
+const src = "/profile_image.png";
 
 export default function HomePage() {
   return (
-    <section className="container">
+    <section className="main_container">
       <div className="left_column">
+        <h2 className="left_column_subtitle">Hello! I'm</h2>
         <h1 className="left_column_title">
           <span className="title_bracket">&#123;</span> Luciana Sabrina Galera{" "}
           <span className="title_bracket">&#125;</span>
         </h1>
-        <h2 className="left_column_subtitle">Software developer</h2>
+
         <p className="left_column_p">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat." "Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          A <span>frontend developer</span> based in Buenos Aires, Argentina.
+          With a passion for design and innovative solutions that can make a
+          difference in people's lives, I'm always looking forward to new
+          challenges. I am excited to connect with other professionals and
+          continue learning and growing in my career. If you're looking for a
+          dedicated developer who can bring your ideas to life, I'd be happy to
+          discuss how I can help. Feel free to get in touch with me to learn
+          more about my skills and experience, or to discuss your project in
+          more detail.
         </p>
         <div className="buttons_container">
           <a href="#projects-section">

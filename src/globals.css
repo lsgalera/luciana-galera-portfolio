@@ -20,4 +20,14 @@ html {
 
 body {
   background-color: var(--background-color);
+  animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
