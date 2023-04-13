@@ -30,7 +30,7 @@ export default function Header() {
             <span className="logo_bracket">&#125;</span>
           </div>
           <ul className="nav_list">
-            <li>About</li>
+            <li>Download CV</li>
             <li>Projects</li>
             <li>Contact</li>
           </ul>

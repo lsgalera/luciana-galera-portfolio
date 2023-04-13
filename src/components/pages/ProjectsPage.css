@@ -1,7 +1,11 @@
+@import "../../App.css";
+
 .project_card_container h3 {
   color: var(--primary-font-color);
 }
 
-.container {
-  background-color: #202122;
+.cards_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }

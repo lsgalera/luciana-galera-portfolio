@@ -3,11 +3,15 @@ import ProjectCard from "../ProjectCard";
 
 export default function ProjectsPage() {
   return (
-    <section className="container" id="projects-section">
-      <div>
-        <h2 className="left_column_subtitle">Featured projects</h2>
-        <div className="projects_container">
-          <ProjectCard />
+    <section id="projects-section">
+      <div className="middle_column">
+        <div>
+          <h2 className="subtitle">Featured projects</h2>
+          <div className="cards_container">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
         </div>
       </div>
     </section>

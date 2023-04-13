@@ -1,11 +1,21 @@
 .layout_container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+}
 
-  background-image: url("../../../public/blob-scene-haikei.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
+section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20%;
+}
+
+.middle_column {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
