@@ -15,7 +15,7 @@ export default function IconsList() {
         />
       </a>
       <a
-        href="https://www.github.com/lsgalera"
+        href="https://github.com/lsgalera"
         className="svg_link_decor"
         target="blank"
       >

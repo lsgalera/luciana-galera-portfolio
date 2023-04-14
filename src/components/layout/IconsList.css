@@ -2,21 +2,20 @@
   display: none;
 }
 
-.svg_link {
-  width: 54px;
-  height: 54px;
-}
-
-.svg_link_download {
-  width: 50px;
-  height: 50px;
-}
-
-.svg_link_decor:hover {
-  filter: brightness(200%);
-}
-
 @media (min-width: 1025px) {
+  .svg_link {
+    width: 54px;
+    height: 54px;
+  }
+
+  .svg_link_download {
+    width: 50px;
+    height: 50px;
+  }
+
+  .svg_link_decor:hover {
+    filter: brightness(200%);
+  }
   .icons_list {
     height: 100%;
     display: block;
