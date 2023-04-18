@@ -21,15 +21,11 @@ export default function IconsList() {
       >
         <img src="/icons8-github.svg" alt="GitHub icon" className="svg_link" />
       </a>
-      <a
-        href="https://www.linkedin.com/in/luciana-galera/"
-        className="svg_link_decor"
-        target="blank"
-      >
+      <a href="https://www.linkedin.com/in/luciana-galera/" target="blank">
         <img
           src="/download-circle-svgrepo-com.svg"
-          alt="LinkedIn icon"
-          className="svg_link_download"
+          alt="CV download icon"
+          className="svg_link_download svg_link_decor"
         />
       </a>
     </div>

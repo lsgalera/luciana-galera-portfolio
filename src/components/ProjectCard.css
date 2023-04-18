@@ -16,7 +16,7 @@
 p {
   color: var(--primary-font-color);
   margin: 1em 0;
-  text-align: justify;
+  font-size: 1rem;
 }
 
 .project_card:hover {

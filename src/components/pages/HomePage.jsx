@@ -1,8 +1,17 @@
 import "./HomePage.css";
+import { useRef, useEffect } from "react";
 
 export default function HomePage() {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (ref && ref.current && ref.current.clientHeight) {
+      const sectionHeight = ref.current.clientHeight;
+      console.log(sectionHeight);
+    }
+  }, []);
   return (
-    <section id="main-section">
+    <section id="main-section" ref={ref}>
       <div className="middle_column">
         <div className="text_container">
           <h2 className="subtitle">Hello! I'm</h2>

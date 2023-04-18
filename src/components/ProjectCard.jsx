@@ -9,11 +9,8 @@ export default function ProjectCard() {
       />
       <h3>Nombre de proyecto</h3>
       <p>
-        Esto es un ejemplo de descripcion de mi proyecto. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Voluptatibus saepe iusto officia
-        corrupti delectus necessitatibus blanditiis ratione, totam dignissimos
-        porro praesentium illum at, voluptatum quis quae quos maxime dolorum
-        dolorem.
+        Esto es un ejemplo de descripcion de mi proyecto. Aca voy a escribir una
+        corta descripcion de lo que hice y con que tecnologias.
       </p>
     </div>
   );
